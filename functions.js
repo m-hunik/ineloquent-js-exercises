@@ -88,6 +88,7 @@ function analyzeArray (arr) {
     let max = [0];
     let min = [0];
     let sum = 0; 
+
     for (let i = 0; i < arr.length; ++i) {
         if (arr[i] > max) {
             max = arr[i];
@@ -95,10 +96,19 @@ function analyzeArray (arr) {
         if (arr[i] < min) {
             min = arr[i];
         } 
-        sum = sum + arr[i];
+        sum += arr[i];
     }
+
     let mean = sum / arr.length;
-    return {max, min, mean};    
+    let aboveMean = 0;
+
+    for (let i = 0; i < arr.length; ++i) {
+        if (arr[i] > mean) {
+            aboveMean++
+        }
+    }
+    
+    return {max, min, mean, aboveMean};    
 }
 
 console.log(analyzeArray([3, 5, 7, 2, 8, -1, 4]));
