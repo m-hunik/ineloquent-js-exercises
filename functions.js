@@ -65,21 +65,37 @@
 
 ////////// Math operations
 
-function mathOperations (a, b, operation) {
-    if (operation == "add") {
-        return a + b;
-    } else if (operation == "substract") {
-        return a - b;
-    } else if (operation == "multiply") {
-        return a * b;
-    } else if (operation == "divide") {
-        if (b == 0) {
-            return "Can't do that!";
+// function mathOperations (a, b, operation) {
+//     if (operation == "add") {
+//         return a + b;
+//     } else if (operation == "substract") {
+//         return a - b;
+//     } else if (operation == "multiply") {
+//         return a * b;
+//     } else if (operation == "divide") {
+//         if (b == 0) {
+//             return "Can't do that!";
+//         }
+//         return a / b;
+//     } else {
+//         return "Invalid operation!";
+//     } 
+// }
+
+// console.log(mathOperations(10, 2, "add"));
+
+function analyzeArray (a) {
+    let max = [0];
+    let min = [0]; 
+    for (let i = 0; i < a.length; ++i) {
+        if (a[i] > max) {
+            max = a[i];
         }
-        return a / b;
-    } else {
-        return "Invalid operation!";
-    } 
+        if (a[i] < min) {
+            min = a[i];
+        } 
+    }
+    return {max, min};    
 }
 
-console.log(mathOperations(10, 2, "add"));
+console.log(analyzeArray([3, 5, 7, 2, 8, -1, 4]));
