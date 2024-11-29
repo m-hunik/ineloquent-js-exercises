@@ -84,18 +84,21 @@
 
 // console.log(mathOperations(10, 2, "add"));
 
-function analyzeArray (a) {
+function analyzeArray (arr) {
     let max = [0];
-    let min = [0]; 
-    for (let i = 0; i < a.length; ++i) {
-        if (a[i] > max) {
-            max = a[i];
+    let min = [0];
+    let sum = 0; 
+    for (let i = 0; i < arr.length; ++i) {
+        if (arr[i] > max) {
+            max = arr[i];
         }
-        if (a[i] < min) {
-            min = a[i];
+        if (arr[i] < min) {
+            min = arr[i];
         } 
+        sum = sum + arr[i];
     }
-    return {max, min};    
+    let mean = sum / arr.length;
+    return {max, min, mean};    
 }
 
 console.log(analyzeArray([3, 5, 7, 2, 8, -1, 4]));
