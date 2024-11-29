@@ -51,14 +51,35 @@
 
 // console.log("Sum: " + sumArray([1, 5, 3, 9, 2]));
 
-////////// Mean of array
+// ////////// Mean of array
 
-function meanArray (a) {
-    let sum = 0;
-    for (let i = 0; i < a.length; i++) { 
-        sum += a[i]
-    }
-    return sum / a.length;
+// function meanArray (a) {
+//     let sum = 0;
+//     for (let i = 0; i < a.length; i++) { 
+//         sum += a[i]
+//     }
+//     return sum / a.length;
+// }
+
+// console.log(meanArray([1, 5, 3, 9, 2]));
+
+////////// Math operations
+
+function mathOperations (a, b, operation) {
+    if (operation == "add") {
+        return a + b;
+    } else if (operation == "substract") {
+        return a - b;
+    } else if (operation == "multiply") {
+        return a * b;
+    } else if (operation == "divide") {
+        if (b == 0) {
+            return "Can't do that!";
+        }
+        return a / b;
+    } else {
+        return "Invalid operation!";
+    } 
 }
 
-console.log(meanArray([1, 5, 3, 9, 2]));
+console.log(mathOperations(10, 2, "add"));
