@@ -84,31 +84,57 @@
 
 // console.log(mathOperations(10, 2, "add"));
 
-function analyzeArray (arr) {
-    let max = [0];
-    let min = [0];
-    let sum = 0; 
+////////// Analyzes array and returns min, max, mean, aboveMean
 
-    for (let i = 0; i < arr.length; ++i) {
-        if (arr[i] > max) {
-            max = arr[i];
-        }
-        if (arr[i] < min) {
-            min = arr[i];
-        } 
-        sum += arr[i];
-    }
+// function analyzeArray (arr) {
+//     let max = [0];
+//     let min = [0];
+//     let sum = 0; 
 
-    let mean = sum / arr.length;
-    let aboveMean = 0;
+//     for (let i = 0; i < arr.length; ++i) {
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }
+//         if (arr[i] < min) {
+//             min = arr[i];
+//         } 
+//         sum += arr[i];
+//     }
 
-    for (let i = 0; i < arr.length; ++i) {
-        if (arr[i] > mean) {
-            aboveMean++
-        }
-    }
+//     let mean = sum / arr.length;
+//     let aboveMean = 0;
+
+//     for (let i = 0; i < arr.length; ++i) {
+//         if (arr[i] > mean) {
+//             aboveMean++
+//         }
+//     }
     
-    return {max, min, mean, aboveMean};    
+//     return {max, min, mean, aboveMean};    
+// }
+
+// console.log(analyzeArray([3, 5, 7, 2, 8, -1, 4]));
+
+////////// Failed attempt at rekursja
+
+// function countdown (n) {
+//     for (n > n - 1; ; --n) {
+//         console.log(n); 
+//         if (n == 1) {
+//             break;
+//         }
+//     }
+// }
+
+// countdown(5);
+
+////////// Proper rekursja
+
+function countdown(n) {
+    console.log(n);
+    if (n > 1) {
+        countdown(n - 1);
+    }
 }
 
-console.log(analyzeArray([3, 5, 7, 2, 8, -1, 4]));
+countdown(10);
