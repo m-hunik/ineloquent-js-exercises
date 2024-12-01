@@ -130,11 +130,23 @@
 
 ////////// Proper rekursja
 
-function countdown(n) {
-    console.log(n);
-    if (n > 1) {
-        countdown(n - 1);
+// function countdown(n) {
+//     console.log(n);
+//     if (n > 1) {
+//         countdown(n - 1);
+//     }
+// }
+
+// countdown(10);
+
+////////// Recursion was suppose to add all numbers leading up to n. Failed, not my solution. 
+
+function sumToN(n) {
+    if (n == 1) {
+        return 1;
+    } else {
+        return n + sumToN(n - 1);
     }
 }
 
-countdown(10);
+console.log(sumToN(5));
