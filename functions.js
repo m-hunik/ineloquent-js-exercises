@@ -141,12 +141,22 @@
 
 ////////// Recursion was suppose to add all numbers leading up to n. Failed, not my solution. 
 
-function sumToN(n) {
-    if (n == 1) {
-        return 1;
-    } else {
-        return n + sumToN(n - 1);
-    }
-}
+// function sumToN(n) {
+//     if (n == 1) {
+//         return 1;
+//     } else {
+//         return n + sumToN(n - 1);
+//     }
+// }
 
-console.log(sumToN(5));
+// console.log(sumToN(5));
+
+////////// Boolean to string
+
+function booleanToString(b){
+    if (b === true) {
+      return "true";
+    } else if (b === false) {
+      return "false";
+    }
+  }
