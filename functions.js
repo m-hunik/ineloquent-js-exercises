@@ -153,10 +153,19 @@
 
 ////////// Boolean to string
 
-function booleanToString(b){
-    if (b === true) {
-      return "true";
-    } else if (b === false) {
-      return "false";
-    }
-  }
+// function booleanToString(b){
+//     if (b === true) {
+//       return "true";
+//     } else if (b === false) {
+//       return "false";
+//     }
+//   }
+
+////////// Capitlize first character
+
+  function capitalize (str) {
+
+    return str[0].toUpperCase() + str.slice(1);
+}
+
+console.log(capitalize("dostojewski"));
