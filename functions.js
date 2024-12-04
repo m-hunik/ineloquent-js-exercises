@@ -198,4 +198,17 @@ function reverseString3(str) {
     return newString;
 }
 
+/* newString = newString + str[i]
+
+str.length = 6 - 1 = 5 newString = "" + "l";
+str.length = 5 - 1 = 4 newString = "l" + "l";
+str.length = 4 - 1 = 3 newString = "ll" + "e";
+str.length = 3 - 1 = 2 newString = "lle" + "w";
+str.length = 2 - 1 = 1 newString = "llew" + "r";
+str.length = 1 - 1 = 0 newString = "llewr" + "O";
+
+End of loop
+
+*/
+
 console.log(reverseString3("Orwell"));
