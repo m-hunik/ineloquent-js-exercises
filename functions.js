@@ -169,7 +169,7 @@
 
 // console.log(capitalize("dostojewski"));
 
-////////// Reverse string (with methods)
+////////// Reverse string with methods
 
 // function reverseString(str) {
 //     var splitString = str.split(""); 
@@ -178,11 +178,24 @@
 //     return joinArray;
 // }
 
+// console.log(reverseString("dostojewski"));
+
 ////////// Reverse string less verbose (so cool you can do that)
 
-console.log(reverseString("dostojewski"));
+// function reverseString2(str) {
+//     return str.split("").reverse().join("");
+//   }
 
-function reverseString2(str) {
-    return str.split("").reverse().join("");
-  }
-console.log(reverseString2("Nietzsche"));
+// console.log(reverseString2("Nietzsche"));
+
+////////// Reverse string with for loop
+
+function reverseString3(str) {
+    let newString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+      newString += str[i];
+    }
+    return newString;
+}
+
+console.log(reverseString3("Orwell"));
