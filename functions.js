@@ -163,9 +163,26 @@
 
 ////////// Capitlize first character
 
-  function capitalize (str) {
+// function capitalize (str) {
+//   return str[0].toUpperCase() + str.slice(1);
+// }
 
-    return str[0].toUpperCase() + str.slice(1);
-}
+// console.log(capitalize("dostojewski"));
 
-console.log(capitalize("dostojewski"));
+////////// Reverse string (with methods)
+
+// function reverseString(str) {
+//     var splitString = str.split(""); 
+//     var reverseArray = splitString.reverse();
+//     var joinArray = reverseArray.join("");
+//     return joinArray;
+// }
+
+////////// Reverse string less verbose (so cool you can do that)
+
+console.log(reverseString("dostojewski"));
+
+function reverseString2(str) {
+    return str.split("").reverse().join("");
+  }
+console.log(reverseString2("Nietzsche"));
