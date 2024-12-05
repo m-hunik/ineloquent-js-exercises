@@ -190,13 +190,13 @@
 
 ////////// Reverse string with for loop
 
-function reverseString3(str) {
-    let newString = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-      newString += str[i];
-    }
-    return newString;
-}
+// function reverseString3(str) {
+//     let newString = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//       newString += str[i];
+//     }
+//     return newString;
+// }
 
 /* newString = newString + str[i]
 
@@ -211,4 +211,12 @@ End of loop
 
 */
 
-console.log(reverseString3("Orwell"));
+// console.log(reverseString3("Orwell"));
+
+////////// Return last letter of a string
+
+function lastLetter(str) {
+    return str.charAt(str.length - 1);
+}
+
+console.log(lastLetter("Kirkegaard"));
