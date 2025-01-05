@@ -29,10 +29,19 @@
 
 ////////// Prompts for number until it's higher than 100
 
-let numberInput;
+// let numberInput;
 
-do {
-    numberInput = prompt("Yo, enter number > 100");
-} while (numberInput <= 100);
+// do {
+//     numberInput = prompt("Yo, enter number > 100");
+// } while (numberInput <= 100);
 
-  
+////////// Checks for prime number 2 <= 100, not my solution
+
+for (let i = 2; i <= 100; i++) {
+    let count = 0;
+    for (let j = 2; j <= i; j++) {
+        if (i % j == 0) ++count;
+        if (count > 1) break;
+    }
+    if (count == 1) alert(i);
+    }
