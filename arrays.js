@@ -39,6 +39,24 @@ console.log(listOfMakes[listOfMakes.length - 1]);
 
 // When you check whether the variable is an array or not, typeof operator will return "object" (because as we said arrays are objects)
 // To solve this we can use method Array.isArray();
-
 console.log(Array.isArray(listOfMakes));
+
+//arguments is an array like object accessible inside functions that contains the values of the arguments passed to the functions
+function func1(a, b, c) {
+    console.log(arguments[1]);
+  }
+  
+  func1(1, 2, 3);
+
+
+//Function takes an array and some arguments, and removes arguments after array
+const removeFromArray = function(array, ...args) {
+    const newArray = [];
+    array.forEach((item) => {
+        if (!args.includes(item)) {
+          newArray.push(item);
+        }
+      });
+      return newArray;
+};
 
