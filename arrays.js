@@ -49,7 +49,7 @@ function func1(a, b, c) {
   func1(1, 2, 3);
 
 
-//Function takes an array and some arguments, and removes arguments after array
+//Function takes an array and some arguments, and removes arguments from that array
 const removeFromArray = function(array, ...args) {
     const newArray = [];
     array.forEach((item) => {
