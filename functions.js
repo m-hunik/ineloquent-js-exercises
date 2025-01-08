@@ -221,11 +221,11 @@ End of loop
 
 // console.log(lastLetter("Kirkegaard"));
 
-////////// String to number
+//////// String to number
 
-// const stringToNumber = function(str){
-//   return str * 1;
-// }
+const stringToNumber = function(str){
+  return str * 1;
+}
 
-// console.log(stringToNumber("1123"))
+console.log(stringToNumber("1123"))
 
