@@ -215,16 +215,17 @@ End of loop
 
 ////////// Return last letter of a string
 
-function lastLetter(str) {
-    return str.charAt(str.length - 1);
-}
+// function lastLetter(str) {
+//     return str.charAt(str.length - 1);
+// }
 
-console.log(lastLetter("Kirkegaard"));
+// console.log(lastLetter("Kirkegaard"));
 
 ////////// String to number
 
-const stringToNumber = function(str){
-  return str * 1;
-}
+// const stringToNumber = function(str){
+//   return str * 1;
+// }
 
-console.log(stringToNumber("1123"))
+// console.log(stringToNumber("1123"))
+
