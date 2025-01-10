@@ -69,17 +69,23 @@ const listOfMakes = ["Dodge", "Ford", "Ferrari"];
 //       return newArray;
 // };
 
-// //////// Adds element to array
+// //////// Adds item to array
 
 listOfMakes.push("Syrena", "Zuk");
 
 
-//////// Deletes first element from array
+//////// Deletes first item from array
 
 // listOfMakes.shift();
 
-/////// If you want to display what was deleted, you need to store it in a variable
+//////// Remove item from array and store it in a variable (to display what was removed)
 
-let removedElement = listOfMakes.shift();
-console.log(listOfMakes);
-console.log(removedElement);
+// let removedItem = listOfMakes.shift();
+// console.log(listOfMakes);
+// console.log(removedItem);
+
+//////// Loops through array and displays all items
+
+for (let i = 0; i < listOfMakes.length; i++) {
+  console.log(listOfMakes[i]);
+}
