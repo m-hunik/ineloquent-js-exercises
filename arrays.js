@@ -89,3 +89,6 @@ listOfMakes.push("Syrena", "Zuk");
 for (let i = 0; i < listOfMakes.length; i++) {
   console.log(listOfMakes[i]);
 }
+
+//////// Checks if array includes said item 
+listOfMakes.includes("Syrena");
