@@ -1,9 +1,9 @@
 const listOfMakes = ["Dodge", "Ford", "Ferrari"];
 const numbers = [1, 2, 3, 4, 5];
 
-// let selectedCar = listOfMakes [0];
+// let selectedCar = listOfMakes[0];
 
-// console.log(listOfMakes[0]);
+// console.log(selectedCar);
 
 // //////// Changes the value of selected element
 
@@ -94,7 +94,8 @@ listOfMakes.push("Syrena", "Zuk");
 // //////// Checks if array includes said item 
 // listOfMakes.includes("Syrena");
 
-//////// Multiplies items in array two times witj map()
+//////// Multiplies items in array two times with map()
+
 const numbersMultiplied = numbers.map(multiply);
 
 function multiply(array) {
@@ -102,3 +103,23 @@ function multiply(array) {
 }
 
 console.log(numbersMultiplied);
+
+const numbersHigherThan = numbers.filter(discernNumbers)
+
+//////// Return only numbers higher than x filter();
+
+function discernNumbers(array) {
+  return array > 3;
+}
+
+console.log(numbersHigherThan);
+
+//////// Add all values in array with reduce(). Naming of parameters may differ but their order has to stay the same for function to work
+
+let sum = numbers.reduce(addition);
+
+function addition(total, value, index, array) {
+  return total + value;
+}
+
+console.log(sum);
