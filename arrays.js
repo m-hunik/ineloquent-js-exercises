@@ -1,4 +1,5 @@
 const listOfMakes = ["Dodge", "Ford", "Ferrari"];
+const numbers = [1, 2, 3, 4, 5];
 
 // let selectedCar = listOfMakes [0];
 
@@ -74,21 +75,30 @@ const listOfMakes = ["Dodge", "Ford", "Ferrari"];
 listOfMakes.push("Syrena", "Zuk");
 
 
-//////// Deletes first item from array
+// //////// Deletes first item from array
 
 // listOfMakes.shift();
 
-//////// Remove item from array and store it in a variable (to display what was removed)
+// //////// Remove item from array and store it in a variable (to display what was removed)
 
 // let removedItem = listOfMakes.shift();
 // console.log(listOfMakes);
 // console.log(removedItem);
 
-//////// Loops through array and displays all items
+// //////// Loops through array and displays all items
 
-for (let i = 0; i < listOfMakes.length; i++) {
-  console.log(listOfMakes[i]);
+// for (let i = 0; i < listOfMakes.length; i++) {
+//   console.log(listOfMakes[i]);
+// }
+
+// //////// Checks if array includes said item 
+// listOfMakes.includes("Syrena");
+
+//////// Multiplies items in array two times witj map()
+const numbersMultiplied = numbers.map(multiply);
+
+function multiply(array) {
+  return array * 2;
 }
 
-//////// Checks if array includes said item 
-listOfMakes.includes("Syrena");
+console.log(numbersMultiplied);
