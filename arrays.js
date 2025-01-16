@@ -106,7 +106,7 @@ console.log(numbersMultiplied);
 
 const numbersHigherThan = numbers.filter(discernNumbers)
 
-//////// Return only numbers higher than x filter();
+//////// Return only numbers higher than x with filter();
 
 function discernNumbers(array) {
   return array > 3;
