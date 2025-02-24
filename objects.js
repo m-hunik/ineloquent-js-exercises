@@ -28,3 +28,20 @@ function isEmpty(emptyTestObject) {
   }
   return true; // return true if there's no properties
 }
+
+let menu = {
+  width: 200,
+  height: 400,
+  title: "elooo",
+};
+
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] === "number") {
+      obj[key] *= 2;
+      console.log(obj[key]);
+    }
+  }
+}
+
+console.log(multiplyNumeric(menu));
