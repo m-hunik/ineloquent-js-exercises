@@ -5,3 +5,7 @@ let user = {
 };
 
 console.log(user.isEatingACookie);
+
+for (let prop in user) {
+  console.log(user[prop]);
+}
