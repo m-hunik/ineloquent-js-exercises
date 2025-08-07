@@ -4,8 +4,11 @@ let user = {
   isEatingACookie: true,
 };
 
-console.log(user.isEatingACookie);
+user.name = "Pete"; 
+delete user.name;
 
-for (let prop in user) {
-  console.log(user[prop]);
-}
+console.log(user.name);
+
+// for (let prop in user) {
+//   console.log(user[prop]);
+// }
