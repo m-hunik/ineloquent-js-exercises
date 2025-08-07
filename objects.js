@@ -4,10 +4,18 @@ let user = {
   isEatingACookie: true,
 };
 
-user.name = "Pete"; 
+user.name = "Pete";
 delete user.name;
 
-console.log(user.name);
+function isEmpty(user) {
+  for (let prop in user) {
+    return false;
+  }
+  return true;
+}
+console.log(isEmpty(user));
+
+
 
 // for (let prop in user) {
 //   console.log(user[prop]);
