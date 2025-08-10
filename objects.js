@@ -7,6 +7,8 @@ let user = {
 user.name = "Pete";
 delete user.name;
 
+// Check if an object is empty
+
 function isEmpty(user) {
   for (let prop in user) {
     return false;
@@ -14,6 +16,8 @@ function isEmpty(user) {
   return true;
 }
 console.log(isEmpty(user));
+
+// Sum properties of an object
 
 let salaries = {
   John: 100, 
@@ -29,3 +33,19 @@ function sumSalaries(salaries) {
   return sum;
 }
 console.log(sumSalaries(salaries));
+
+// Multiply numeric properties of an object by 2
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+function multiplyNumeric(menu) {
+  for (let prop in menu) {
+    if (typeof menu[prop] === 'number') {
+      menu[prop] *= 2;
+    }
+  }
+}
