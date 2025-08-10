@@ -15,8 +15,17 @@ function isEmpty(user) {
 }
 console.log(isEmpty(user));
 
+let salaries = {
+  John: 100, 
+  Ann: 160,
+  Pete: 130
+};
 
-
-// for (let prop in user) {
-//   console.log(user[prop]);
-// }
+function sumSalaries(salaries) {
+  let sum = 0;
+  for (let prop in salaries) {
+    sum += salaries[prop];
+  }
+  return sum;
+}
+console.log(sumSalaries(salaries));
