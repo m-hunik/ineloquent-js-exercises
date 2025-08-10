@@ -42,6 +42,8 @@ let menu = {
   title: "My menu"
 };
 
+console.log(menu);
+
 function multiplyNumeric(menu) {
   for (let prop in menu) {
     if (typeof menu[prop] === 'number') {
@@ -49,3 +51,6 @@ function multiplyNumeric(menu) {
     }
   }
 }
+
+multiplyNumeric(menu);
+console.log(menu);
