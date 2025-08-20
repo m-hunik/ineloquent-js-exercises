@@ -27,12 +27,24 @@
 
 // Sort users by age
 
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
 
-let arr = [pete, john, mary];
+// let arr = [pete, john, mary];
 
-arr.sort((a, b) => a.age - b.age);
+// arr.sort((a, b) => a.age - b.age);
 
-console.log(arr);
+// console.log(arr);
+
+// Get average age
+
+let john = { name: "John", age: 25};
+let pete = { name: "Pete", age: 30};
+let mary = { name: "Mary", age: 29 };
+
+let arr = [john, pete, mary];
+
+let averageAge = arr.reduce((sum, current) => sum + current.age, 0) / arr.length;    
+
+console.log(averageAge);
