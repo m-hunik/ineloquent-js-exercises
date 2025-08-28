@@ -39,12 +39,30 @@
 
 // Get average age
 
-let john = { name: "John", age: 25};
-let pete = { name: "Pete", age: 30};
-let mary = { name: "Mary", age: 29 };
+// let john = { name: "John", age: 25};
+// let pete = { name: "Pete", age: 30};
+// let mary = { name: "Mary", age: 29 };
 
-let arr = [john, pete, mary];
+// let arr = [john, pete, mary];
 
-let averageAge = arr.reduce((sum, current) => sum + current.age, 0) / arr.length;    
+// let averageAge = arr.reduce((sum, current) => sum + current.age, 0) / arr.length;    
 
-console.log(averageAge);
+// console.log(averageAge);
+
+// Create keyed object from array
+
+ let users = [
+    {id: 'john', name: 'John Smith', age: 20},
+    {id: 'ann', name: 'Ann Smith', age: 24},
+    {id: 'pete', name: 'Pete PEterson', age: 31},
+ ];
+
+ let usersById = groupById(users);
+    console.log(usersById);
+
+function groupById(array) {
+    return array.reduce((obj, value) => {
+        obj[value.id] = value;
+        return obj;
+    }, {})
+}
